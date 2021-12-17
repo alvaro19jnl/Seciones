@@ -1,0 +1,191 @@
+body {
+    padding: 1;
+    margin: 1;
+}
+
+#menu {
+    font-family: "Raleway", sans-serif;
+    background-image: scroll(circle at center, #9eeb23, #53ac70);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: scroll(ellipse at bottom, #1b2735, #090a0f);
+    font-weight: 300;
+    width: 1100px;
+    height: 250px;
+    position: relative;
+    top: 1px;
+    left: -300px;
+}
+
+.all {
+    display: flex;
+    perspective: 10px;
+    transform: perspective(300px) rotateX(20deg);
+    will-change: perspective;
+    perspective-origin: center center;
+    transition: all 1.3s ease-out;
+    justify-content: center;
+    transform-style: preserve-3d;
+}
+
+.all:hover {
+    perspective: 1000px;
+    transition: all 1.3s ease-in;
+    transform: perspective(10000px) rotateX(0deg);
+}
+
+.all:hover .text {
+    opacity: 1;
+}
+
+.all:hover>div {
+    opacity: 1;
+    transition-delay: 0s;
+}
+
+.all:hover .explainer {
+    opacity: 0;
+}
+
+.left,
+.center,
+.right,
+.lefter,
+.righter {
+    width: 200px;
+    height: 150px;
+    transform-style: preserve-3d;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    box-shadow: 0 0 20px 5px rgba(150, 23, 209, 0.4);
+    opacity: 0;
+    transition: all 0.3s ease;
+    transition-delay: 1s;
+    position: relative;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: rgb(55, 192, 216);
+    cursor: pointer;
+    background-blend-mode: color-burn;
+}
+
+.left:hover,
+.center:hover,
+.right:hover,
+.lefter:hover,
+.righter:hover {
+    box-shadow: 0 0 30px 10px rgba(242, 100, 255, 0.6);
+    background-color: #ccf;
+}
+
+.text {
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 0.3s ease;
+    bottom: 0;
+    left: 5px;
+    position: absolute;
+    will-change: transform;
+    color: #fff;
+    text-shadow: 0 0 5px rgba(53, 53, 158, 0.6);
+}
+
+.lefter {
+    transform: translateX(-60px) translateZ(-50px) rotateY(-10deg);
+    background-image: url(https://cdn3.iconfinder.com/data/icons/popular-social-media-2/48/jee01-14-256.png);
+}
+
+.left {
+    transform: translateX(-30px) translateZ(-25px) rotateY(-5deg);
+    background-image: url(https://cdn2.iconfinder.com/data/icons/social-media-2198/64/facebook_social_media_network-256.png);
+}
+
+.center {
+    opacity: 1;
+    background-image: url(https://cdn3.iconfinder.com/data/icons/other-icons/48/app_window-512.png);
+}
+
+.right {
+    transform: translateX(30px) translateZ(-25px) rotateY(5deg);
+    background-image: url(https://cdn4.iconfinder.com/data/icons/picons-social/57/38-instagram-3-256.png);
+}
+
+.righter {
+    transform: translateX(60px) translateZ(-50px) rotateY(10deg);
+    background-image: url(https://cdn1.iconfinder.com/data/icons/social-media-circle-7/512/Circled_Youtube_svg-256.png);
+}
+
+.explainer {
+    font-weight: 50;
+    font-size: 2rem;
+    color: #fff;
+    transition: all 0.6s ease;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    background-image: radial-gradient(circle at center top, #cce, #33a);
+    border-radius: 10px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ref::first-letter {
+    font-size: 12px;
+}
+
+a:link {
+    color: rgb(255, 255, 255);
+}
+
+.p {
+    float: left;
+}
+
+div#menu {
+    float: right;
+}
+
+div#credits {
+    clear: both;
+}
+
+div#titul {
+    width: 700px;
+    height: 300px;
+    position: relative;
+    top: 270px;
+    left: 50px;
+}
+
+div#vid {
+    width: 560px;
+    height: 315px;
+    position: relative;
+    top: -35px;
+    left: 800px;
+}
+
+#misiona {
+    width: 140000px;
+    height: 300px;
+    background-color: indianred;
+    position: relative;
+    top: -35px;
+    left: 50px;
+}
+
+div#mision {
+    width: 560px;
+    height: 315px;
+    position: relative;
+    top: 120px;
+    left: 800px;
+}
